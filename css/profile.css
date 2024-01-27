@@ -1,0 +1,38 @@
+  .content {
+      max-width: 450px;
+      margin: auto;
+  }
+  
+  
+  .collection .collection-item.avatar {
+      padding: 5px;
+  }
+  
+  
+  .material-icons {
+      font-size: 50px;
+      color: #26a69a;
+  }
+  
+  .collapsible-header  {
+      min-height: 4rem;
+      line-height: 4rem;
+      font-size: 0.9rem;
+  }
+  
+  .collapsible-header  i {
+      width: 3rem;
+      line-height: 4rem;
+      margin-right: -10px;
+  }
+  
+  .collapsible li.active i {
+    -ms-transform: rotate(180deg); /* IE 9 */
+    -webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */
+    transform: rotate(180deg);
+  }
+  
+  
+  .collapsible-body {
+      background-color: #d0d0d0;
+  }
