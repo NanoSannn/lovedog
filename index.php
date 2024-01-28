@@ -125,7 +125,7 @@
         <!-- About Start -->
         <div class="container-xxl py-5">
             <div class="container">
-                <div class="row g-5 align-items-center">
+                <div class="row g-5 ">
                     <div class="col-lg-6">
                         <div class="row g-3">
                             <div class="col-6 text-start">
@@ -265,17 +265,6 @@
                     <?php
                         }
                     ?>
-                    <div class="col-lg-3 col-md-5 wow fadeInUp" data-wow-delay="0.1s">
-                        <div class="team-item text-center rounded overflow-hidden">
-                            <div class="rounded-circle overflow-hidden m-4">
-                                <img class="img-fluid" src="img/Plus.jpg" alt="" style="width:250px;height:250px;">
-                            </div>
-                            <h1 class="mb-0">เพิ่มเตืม</h1>
-                            <div class="d-flex justify-content-center mt-3">
-                                <a class="btn btn-square btn-primary mx-1" href="product.php"><i class="fab bi-plus"></i></a>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>

@@ -2,17 +2,9 @@
     session_start();
     extract($_POST);extract($_GET);extract($_REQUEST);
     include_once "../config.php";
-    $data = array(
-        "Breeder" => $Breeder,
-        "breeder_animal" => $breeder_animal,
-        "birthday" => $birthday
-    );
-
-    // แปลงเป็น JSON
-    $json_data = json_encode($data, JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT);
 
     $conn = mysqli_connect($serverName, $uesrName, $passwordserver, $datebase);
-    $sql = "UPDATE products SET Products_Name='$Products_Name', Products_price=$Products_price, Products_img='$Products_img', details1='$details1', details2='$json_data'
+    $sql = "UPDATE products SET Products_Name='$Products_Name', Products_price=$Products_price, Products_img='$Products_img', details1='$details1', details2='$details2'
             WHERE Products_ID='$Products_ID'";
     if($conn->query($sql) === TRUE){
 ?>

@@ -130,22 +130,6 @@
                         <div class="product-text">
                             <h1><?php echo $data2['Products_Name'] ?></h1>
                             <p><h2>
-                                <?php
-                                    // JSON string ที่ต้องการแยก
-                                    $jsonData = $data2['details2'];
-
-                                    $dataArray = json_decode($jsonData, true);
-
-                                    // ตรวจสอบและกำหนดค่าเริ่มต้นถ้าไม่มีค่า
-                                    $breeder = isset($dataArray['Breeder']) ? $dataArray['Breeder'] : "N/A";
-                                    $breederAnimal = isset($dataArray['breeder_animal']) ? $dataArray['breeder_animal'] : "N/A";
-                                    $birthday = isset($dataArray['birthday']) ? $dataArray['birthday'] : "N/A";
-
-                                    echo "พ่อพันธุ์: $breeder<br>";
-                                    echo "แม่พันธุ์: $breederAnimal<br>";
-                                    echo "วันเกิด: $birthday<br>";
-                                ?>
-
                                 <?php 
                                     if($data2['details1']==1){
                                         echo "พันธุ์ ปอม";
@@ -155,6 +139,9 @@
                                         echo "พันธุ์ ชิสุ";
                                     }
                                 ?><br> 
+                                <?php
+                                    echo "รายละเอียด : ".$data2['details2'];
+                                ?><br>
                                 ฿<?php echo number_format( $data2['Products_price'], 0 ) ?><br> 
                             </h2></p>
                             <div class="product-price-btn">

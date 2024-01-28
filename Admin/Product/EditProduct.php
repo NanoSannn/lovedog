@@ -150,40 +150,12 @@
                                         <input class="form-control" type="file" name="Products_img" required />
                                     </th>
                                 </tr>
-                                <?php
-                                    // JSON string ที่ต้องการแยก
-                                    $jsonData = $data2['details2'];
-
-                                    $dataArray = json_decode($jsonData, true);
-
-                                    // ตรวจสอบและกำหนดค่าเริ่มต้นถ้าไม่มีค่า
-                                    $breeder = isset($dataArray['Breeder']) ? $dataArray['Breeder'] : "N/A";
-                                    $breederAnimal = isset($dataArray['breeder_animal']) ? $dataArray['breeder_animal'] : "N/A";
-                                    $birthday = isset($dataArray['birthday']) ? $dataArray['birthday'] : "N/A";
-                                ?>
-
                                 <tr>
                                     <th>
-                                        <label>พ่อพันธุ์</label>
+                                        <label>รายละเอียด</label>
                                     </th>
                                     <th>
-                                        <input type="text" class="form-control" name="Breeder" value="<?php echo $breeder; ?>" required />
-                                    </th>
-                                </tr>
-                                <tr>
-                                    <th>
-                                        <label>แม่พันธุ์</label>
-                                    </th>
-                                    <th>
-                                        <input type="text" class="form-control" name="breeder_animal" value="<?php echo $breederAnimal; ?>" required />
-                                    </th>
-                                </tr>
-                                <tr>
-                                    <th>
-                                        <label>วันเกิด</label>
-                                    </th>
-                                    <th>
-                                        <input type="text" class="form-control" name="birthday" value="<?php echo $birthday; ?>" required />
+                                        <input type="text" class="form-control" name="details2" value="<?php echo $data2['details2']; ?>" required />
                                     </th>
                                 </tr>
                                 <tr>

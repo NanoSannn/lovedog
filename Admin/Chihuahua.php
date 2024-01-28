@@ -119,9 +119,7 @@
                                     <th scope="col">ชื่อ</th>
                                     <th scope="col">ราคา(บาท)</th>
                                     <th scope="col">รูป</th>
-                                    <th scope="col">พ่อพันธุ์</th>
-                                    <th scope="col">แม่พันธุ์</th>
-                                    <th scope="col">วันเกิด</th>
+                                    <th scope="col">รายละเอียด</th>
                                     <th scope="col">พันธุ์</th>
                                     <th scope="col">แก้ไข</th>
                                     <th scope="col">ลบ</th>
@@ -139,20 +137,7 @@
                                     <td><?php echo $data2['Products_Name'] ?></td>
                                     <td><?php echo number_format( $data2['Products_price'], 0 ) ?></td>
                                     <td><img src="../img/<?php echo $data2['Products_img'] ?>" alt="" style="width:100px;height:100px;"></td>
-                                    <?php
-                                        // JSON string ที่ต้องการแยก
-                                        $jsonData = $data2['details2'];
-
-                                        $dataArray = json_decode($jsonData, true);
-
-                                        // ตรวจสอบและกำหนดค่าเริ่มต้นถ้าไม่มีค่า
-                                        $breeder = isset($dataArray['Breeder']) ? $dataArray['Breeder'] : "N/A";
-                                        $breederAnimal = isset($dataArray['breeder_animal']) ? $dataArray['breeder_animal'] : "N/A";
-                                        $birthday = isset($dataArray['birthday']) ? $dataArray['birthday'] : "N/A";
-                                    ?>
-                                    <td><?php echo $breeder ?></td>
-                                    <td><?php echo $breederAnimal ?></td>
-                                    <td><?php echo $birthday?></td>
+                                    <td><?php echo $data2['details2']?></td>
                                     <td>
                                         <?php 
                                             if($data2['details1']==1){

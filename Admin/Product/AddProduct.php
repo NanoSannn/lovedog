@@ -139,26 +139,10 @@
                                 </tr>
                                 <tr>
                                     <th>
-                                        <label>พ่อพันธุ์</label>
+                                        <label>รายละเอียด</label>
                                     </th>
                                     <th>
-                                        <input class="form-control" type="text" name="Breeder" required />
-                                    </th>
-                                </tr>
-                                <tr>
-                                    <th>
-                                        <label>แม่พันธุ์</label>
-                                    </th>
-                                    <th>
-                                        <input class="form-control" type="text" name="breeder_animal" required />
-                                    </th>
-                                </tr>
-                                <tr>
-                                    <th>
-                                        <label>วันเกิด</label>
-                                    </th>
-                                    <th>
-                                        <input class="form-control" type="text" name="birthday" required />
+                                        <input class="form-control" type="text" name="details2" required />
                                     </th>
                                 </tr>
                                 <tr>
